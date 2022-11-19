@@ -48,3 +48,19 @@ const fruitProcessor2 = function (apple, orange) {
 };
 
 console.log(fruitProcessor2(2, 4));
+
+// Arrays
+
+const friends = ["friend1", "friend2", "friend3"];
+console.log(friends);
+
+const years = new Array(1991, 1992, 1993);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends.length);
+
+friends[2] = "new friend";
+
+const ponjagannath = ["PonJagannath", "Thangaswami", 2022 - 1984];
+console.log(ponjagannath);

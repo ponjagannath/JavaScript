@@ -88,3 +88,5 @@ const fruitProcessor2 = function (apple, orange) {
 
 console.log(fruitProcessor2(2, 4));
 ```
+
+# Array
