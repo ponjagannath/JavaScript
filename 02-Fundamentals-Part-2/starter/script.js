@@ -64,3 +64,57 @@ friends[2] = "new friend";
 
 const ponjagannath = ["PonJagannath", "Thangaswami", 2022 - 1984];
 console.log(ponjagannath);
+
+// Add elements to the end of the array
+friends.push("Jay");
+
+console.log(friends);
+
+// Add elements to the start of the array
+friends.unshift("First Name");
+console.log(friends);
+
+// Remove relements
+
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+// Remove first elements from the array
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("friend1"));
+
+// Check if the element is present in the array
+
+console.log(friends.includes("friend1"));
+console.log(friends.includes("friend99"));
+
+const me = {
+  firstName: "Pon Jagannath",
+  lastName: "Thangaswami",
+  age: 2037 - 1991,
+  job: "Student",
+  friends: ["Aadhitya", "Kavitha"],
+};
+
+console.log(me);
+console.log(me.firstName);
+console.log(me["firstName"]);
+
+const interestedIn = prompt(
+  "What do you want to now about me? Select between firstName, lastName, age, job, friends."
+);
+
+if (me[interestedIn]) {
+  console.log(me[interestedIn]);
+} else {
+  console.log("Select between firstName, lastName, age, job, friends.");
+}
+
+me["new"] = "new addition";
+console.log(me);
+
+console.log(me.friends[0]);
+console.log(me["friends"][0]);
