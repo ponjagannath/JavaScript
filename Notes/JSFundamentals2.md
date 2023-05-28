@@ -139,11 +139,106 @@ console.log(friends.includes("friend1"));
 # Objects
 
 ```js
-const jones = {
+const me = {
   firstName: "Pon Jagannath",
   lastName: "Thangaswami",
+  birthYear: 1991,
   age: 2037 - 1991,
   job: "Student",
   friends: ["Aadhitya", "Kavitha"],
+  hasDriversLicence: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
 };
+
+console.log(me);
+console.log(me.firstName);
+console.log(me["firstName"]);
+// console.log(me.calcAge(1991));
+// console.log(me["calcAge"](1991));
+console.log(me.calcAge());
+```
+
+# for loop
+
+```js
+for (let rep = 1; rep <= 10; rep = rep + 1) {
+  console.log(`repeation ${rep}`);
+}
+```
+
+# continue and break
+
+```js
+// continue and break
+
+console.log("----------Continue----------");
+for (let i = 0; i < myArray.length; i = i + 1) {
+  if (typeof myArray[i] !== "string") continue;
+  console.log(myArray[i], typeof myArray[i]);
+}
+
+console.log("----------Break----------");
+for (let i = 0; i < myArray.length; i = i + 1) {
+  if (typeof myArray[i] === "number") break;
+  console.log(myArray[i], typeof myArray[i]);
+}
+```
+
+# looping backwards
+
+```js
+console.log("------looping backwards-------");
+for (let i = myArray.length - 1; i >= 0; i = i - 1) {
+  console.log(myArray[i]);
+}
+```
+
+# loop inside a loop
+
+```js
+let rep = 1;
+while (rep <= 10) {
+  console.log(`whileloop iteration ${rep}`);
+  rep = rep + 1;
+}
+
+console.log("-----dice rolling-----");
+console.log("----roll until you get 6-------");
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice != 6) {
+  console.log(`you rolled ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+}
+
+console.log(`you rolled ${dice}`);
+```
+
+# while loop
+
+```js
+let rep = 1;
+while (rep <= 10) {
+  console.log(`whileloop iteration ${rep}`);
+  rep = rep + 1;
+}
+
+console.log("-----dice rolling-----");
+console.log("----roll until you get 6-------");
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice != 6) {
+  console.log(`you rolled ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+}
+
+console.log(`you rolled ${dice}`);
 ```
